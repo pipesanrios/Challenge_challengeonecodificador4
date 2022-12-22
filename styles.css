@@ -1,0 +1,134 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #303030;
+    margin: 0;
+    padding: 0;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+figure{
+    width: 100px;
+}
+figure img{
+    width: 100%;
+}
+.ingresoTexto{
+    width: 70%;
+}
+.side{
+    background-color: rgb(75, 75, 75);
+    margin: 5vh;
+    width: 30%;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+.side h5{
+    margin: 50px;
+    color: wheat;
+    font-size: 26px;
+    text-align: center;
+    width: 100%;
+}
+.ingresoTexto p{
+    color: white;
+}
+
+textarea{
+    width: 80%;
+    height: 40vh;
+    margin: 50px;
+    font-size: 30px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    resize:none;
+}
+.ingresoTexto p,.ingresoTexto div,textarea{
+    margin-left: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+.btns{
+    margin-top: -100px;
+}
+button{
+    
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 40px;
+    font-size: 26px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+button:hover{
+    opacity: 0.8;
+}
+.ingresoTexto div button:nth-child(2){
+    background-color: rgb(66, 66, 192);
+    color: white;
+    
+}
+
+.side figure {
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+.side figure img{
+    width: 80%;
+    left: -50px;
+    margin-top: -70px;
+    
+}
+.side button{
+    margin-left: 15%;
+    margin-bottom: 50px;
+}
+.side p{
+    color: wheat;
+    font-size: 26px;
+    text-align: center;
+    width: 100%;
+}
+@media only screen and (max-width: 900px) and (min-width: 320px){
+    
+    section{
+        flex-flow: wrap;
+    }
+    
+    .ingresoTexto{
+        width: 100%;  
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        align-items: center;      
+    }
+    .ingresoTexto p,.ingresoTexto div,textarea{
+        margin: 20px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .side{
+        width: 100%;
+        padding: 10px;
+    }
+    .btns{
+        width: 100%;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+    }
+    button{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+}
